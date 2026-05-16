@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter Tight', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --background: 0 0% 5.5%;
+    --foreground: 40 5% 95.7%;
+    --card: 0 0% 7%;
+    --card-foreground: 40 5% 95.7%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 5% 95.7%;
+    --primary: 68 100% 53%;
+    --primary-foreground: 0 0% 5.5%;
+    --secondary: 0 0% 16.5%;
+    --secondary-foreground: 40 5% 95.7%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 2% 73.7%;
+    --accent: 68 100% 53%;
+    --accent-foreground: 0 0% 5.5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16.5%;
+    --input: 0 0% 16.5%;
+    --ring: 68 100% 53%;
+    --chart-1: 68 100% 53%;
+    --chart-2: 40 5% 95.7%;
+    --chart-3: 0 0% 16.5%;
+    --chart-4: 40 2% 73.7%;
+    --chart-5: 0 0% 12%;
+    --radius: 0rem;
+    --sidebar-background: 0 0% 5.5%;
+    --sidebar-foreground: 40 5% 95.7%;
+    --sidebar-primary: 68 100% 53%;
+    --sidebar-primary-foreground: 0 0% 5.5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 40 5% 95.7%;
+    --sidebar-border: 0 0% 16.5%;
+    --sidebar-ring: 68 100% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 5.5%;
+    --foreground: 40 5% 95.7%;
+    --card: 0 0% 7%;
+    --card-foreground: 40 5% 95.7%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 5% 95.7%;
+    --primary: 68 100% 53%;
+    --primary-foreground: 0 0% 5.5%;
+    --secondary: 0 0% 16.5%;
+    --secondary-foreground: 40 5% 95.7%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 2% 73.7%;
+    --accent: 68 100% 53%;
+    --accent-foreground: 0 0% 5.5%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16.5%;
+    --input: 0 0% 16.5%;
+    --ring: 68 100% 53%;
+    --chart-1: 68 100% 53%;
+    --chart-2: 40 5% 95.7%;
+    --chart-3: 0 0% 16.5%;
+    --chart-4: 40 2% 73.7%;
+    --chart-5: 0 0% 12%;
+    --sidebar-background: 0 0% 5.5%;
+    --sidebar-foreground: 40 5% 95.7%;
+    --sidebar-primary: 68 100% 53%;
+    --sidebar-primary-foreground: 0 0% 5.5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 40 5% 95.7%;
+    --sidebar-border: 0 0% 16.5%;
+    --sidebar-ring: 68 100% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  ::selection {
+    background: hsl(68, 100%, 53%);
+    color: hsl(0, 0%, 5.5%);
+  }
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(68, 100%, 53%);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 5.5%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 16.5%);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
