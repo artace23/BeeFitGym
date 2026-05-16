@@ -23,7 +23,7 @@ const STEPS = [
 export default function ProcessSection() {
   return (
     <section id="process" className="px-6 md:px-12 py-16 md:py-24 border-t border-border">
-      <SectionLabel number="04" label="The Start" />
+      <SectionLabel number="06" label="The Start" />
 
       <div className="grid md:grid-cols-3 gap-px bg-border">
         {STEPS.map((step, i) => (

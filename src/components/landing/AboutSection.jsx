@@ -5,7 +5,7 @@ import SectionLabel from './SectionLabel';
 export default function AboutSection({ aboutImage }) {
   return (
     <section id="space" className="px-6 md:px-12 py-16 md:py-24 border-t border-border">
-      <SectionLabel number="05" label="Our Space" />
+      <SectionLabel number="07" label="Our Space" />
 
       <div className="grid md:grid-cols-2 gap-px bg-border">
         {/* Image */}

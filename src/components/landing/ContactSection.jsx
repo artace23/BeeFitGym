@@ -31,7 +31,7 @@ const CONTACT_CHANNELS = [
 export default function ContactSection() {
   return (
     <section id="contact" className="px-6 md:px-12 py-16 md:py-24 border-t border-border">
-      <SectionLabel number="06" label="Contact" />
+      <SectionLabel number="08" label="Contact" />
 
       <div className="grid md:grid-cols-2 gap-px bg-border">
         {/* NAP Block */}

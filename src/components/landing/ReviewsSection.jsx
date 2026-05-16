@@ -24,7 +24,7 @@ const REVIEWS = [
 export default function ReviewsSection() {
   return (
     <section id="reviews" className="px-6 md:px-12 py-16 md:py-24 border-t border-border">
-      <SectionLabel number="03" label="Reviews" />
+      <SectionLabel number="05" label="Reviews" />
 
       <div className="grid md:grid-cols-3 gap-px bg-border">
         {REVIEWS.map((review, i) => (
