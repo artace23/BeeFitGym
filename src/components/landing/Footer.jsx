@@ -35,10 +35,18 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-border px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between gap-2">
+      <div className="border-t border-border px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <span className="font-mono text-[10px] tracking-[0.15em] text-muted-foreground uppercase">
-          Beefit Gym Prime — Davao City, Philippines
+          BeeFit Gym Prime — Davao City
         </span>
+        <a 
+          href="https://artdelacruz.vercel.app" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="font-mono text-[10px] tracking-[0.15em] text-primary uppercase font-bold hover:text-primary/70 transition-colors border-b border-transparent hover:border-primary/50 pb-0.5"
+        >
+          [Powered by Ardy]
+        </a>
         <span className="font-mono text-[10px] tracking-[0.15em] text-muted-foreground uppercase">
           [SYS_STATUS: OPERATIONAL]
         </span>
