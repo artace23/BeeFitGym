@@ -47,9 +47,6 @@ export default function Footer() {
         >
           [Powered by Ardy]
         </a>
-        <span className="font-mono text-[10px] tracking-[0.15em] text-muted-foreground uppercase">
-          [SYS_STATUS: OPERATIONAL]
-        </span>
       </div>
     </footer>
   );
